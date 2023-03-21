@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aviator Predictor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="predecir.js"></script>
+	<script src="ad.js"></script>
+	<script src="ventanaEmergente.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="servicios.html">Predictor BOT</a></li>
+				<li><a href="https://t.me/aviatorM5">Support</a></li>
+				<li style="float:right"><a class="boton" href="#" onclick="mostrarVentana()">Iniciar sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<button onclick="predecir()" class="boton-principal">PREDECIR</button>
+		<p id="predictionResult" style="text-align:center; font-size:8rem; margin-top: 30rem;"></p>
+	</section>	
+	<footer>
+		<d> PREDICTOR GRATIS (FREE) </p>
+	</footer>
+	<!-- Ventana emergente para iniciar sesión -->
+	<div id="loginPopup">
+			<label for="usuario">Usuario:</label><br>
+			<input type="text" id="usuario" name="usuario"><br>
+			<label for="contrasena">Contraseña:</label><br>
+			<input type="password" id="contrasena" name="contrasena"><br><br>
+			<input type="submit" value="Iniciar sesión">
+			<button onclick="cerrarVentana()">Cerrar</button>
+		</form>
+</body>
+</html>

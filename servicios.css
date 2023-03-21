@@ -1,0 +1,78 @@
+body {
+  background-color: #1c2331;
+  }
+.paquetes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  .paquete {
+  flex: 1 0 350px;
+  margin: 20px;
+  padding: 20px;
+  border: none;
+  text-align: center;
+  background-color: #000000;
+  box-shadow: 0 5px 15px rgba(250, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .paquete:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  }
+  
+  .paquete video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  }
+  
+  .paquete h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  }
+  
+  .paquete ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 30px;
+  }
+  
+  .paquete ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  }
+  
+  .boton-comprar {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .boton-comprar:hover {
+  transform: scale(1.1);
+  }
+  .precio {
+    font-size: 3rem;
+    color: #ff0066;
+    text-align: center;
+    margin: 2rem 0;
+    text-shadow: 2px 2px #ccc;
+  }
+  
