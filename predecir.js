@@ -3,6 +3,8 @@ function predecir() {
   var num = Math.floor(Math.random() * 201 + 100) / 100;
   setTimeout(function() {
     document.getElementById("predictionResult").innerHTML = num.toFixed(2) + "x";
+    document.getElementById("predictionResult").innerHTML = valorPredicho;
+
   }, 2000);
   var i = 0;
   var interval = setInterval(function() {

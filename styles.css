@@ -2,10 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, #485563, #29323c);
+    background-image: linear-gradient(to bottom right, #030405, #030303);
     background-size: cover;
     background-attachment: fixed;
     }
+    
 
     header {
     background-color: transparent;
@@ -19,45 +20,52 @@ body {
     }
     
     nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
+
     
     nav li {
-    float: left;
+      display: inline-block;
     }
-
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border: none;
-    border-radius: 50px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-left: 10px;
-    background: linear-gradient(to right, #ff0066, #00c3ff);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  nav a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 195, 255, 0.2);
-  }
-  
-  .active {
-    background-color: #00c3ff;
-    color: #fff;
-  }
+    
+    nav a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-left: 10px;
+      background: linear-gradient(to right, #080608, #00c3ff);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    
+    nav a:first-child {
+      margin-left: 0;
+    }
+    
+    nav a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 195, 255, 0.2);
+    }
+    
+    .active {
+      background-color: #00c3ff;
+      color: #fff;
+    }
+    
   
 
 
     
-    section {
+  section {
     background-image: url("fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,38 +75,43 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
     
-
     
+
     p {
-        font-size: 1.2em;
-        color: #ffffff;
-        margin-top: 30rem;
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    } 
+      font-size: 1.2em;
+      color: #ffffff;
+      margin-top: 10rem;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
     
       
     
     
-      .boton-principal {
-        display: block;
-        margin: 3rem auto 5px 45rem; /*Agregamos un margen superior negativo de 2rem, un margen izquierdo de 1rem y ajustamos los márgenes laterales e inferiores*/
-        padding: 15px 30px;
-        font-size: 24px;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        background-color: transparent;
-        border: 3px solid #02b7ff;
-        border-radius: 50px;
-        box-shadow: 0 0 0 0 #02b7ff;
-        transition: all 0.3s ease;
-        cursor: pointer;
+     .boton-principal {
+      display: block;
+      margin: 5rem auto 5px auto;
+      padding: 20px 30px;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      background-color: transparent;
+      border: 5px solid #02b7ff;
+      border-radius: 50px;
+      box-shadow: 0 0 0 0 #02b7ff;
+      transition: all 0.3s ease;
+      cursor: pointer;
       }
       
       .boton-principal:hover {
@@ -117,17 +130,18 @@ nav a {
       
     
     .boton {
-    background-color: #555;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 17px 20px;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-left: 50px;
+      background: linear-gradient(to right, #080608, #00c3ff);
+      transition: all 0.3s ease-in-out;
     }
     
     .boton:hover {
@@ -157,7 +171,7 @@ nav a {
     
     .formulario h2 {
     font-size: 2em;
-    color: #333;
+    color: #0c0909;
     margin-bottom: 20px;
     }
     
@@ -215,11 +229,15 @@ nav a {
             margin-bottom: 1rem;
             }
             
-            p {
-            font-size: 1.5rem;
-            text-align: center;
-            margin-bottom: 2rem;
+            p#predictionResult {
+              font-size: 6rem;
+              text-align: center;
+              margin-top: 10rem;
+              color: #00FFFF;
+              text-shadow: 0px 0px 20px #00FFFF;
+              font-family: "Helvetica Neue", sans-serif;
             }
+            
             
             .buyBtn {
             display: block;
@@ -291,7 +309,7 @@ nav a {
               padding: 40px;
               z-index: 9999;
               display: none;
-              box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             }
             
             #loginPopup label {
@@ -306,14 +324,14 @@ nav a {
               padding: 10px;
               border-radius: 5px;
               border: none;
-              background-color: #333;
+              background-color: #000000;
               color: #fff;
               margin-bottom: 20px;
             }
             
             #loginPopup input[type="submit"], #loginPopup button {
               background-color: #fff;
-              color: #1a1a1a;
+              color: #070303;
               border: none;
               padding: 10px 20px;
               border-radius: 5px;
@@ -322,6 +340,32 @@ nav a {
             }
             
             #loginPopup input[type="submit"]:hover, #loginPopup button:hover {
-              background-color: #1a1a1a;
+              background-color: #080505;
               color: #fff;
             }
+            .iconos {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 10px;
+            }
+            
+            .iconos a {
+              margin: 1rem 0;
+            }
+            
+            .iconos img {
+              max-width: 50px;
+              margin: 0 5px;
+            }
+            
+            h1 {
+              text-align: center;
+              color: #15ff00; /* color cian */
+              font-size: 1rem;
+              font-family: 'Roboto', sans-serif; /* Fuente futurista */
+              text-shadow: 2px 2px 4px #000000; /* sombra para un efecto futurista */
+              margin-top: 1rem; /* para subir el texto */
+              letter-spacing: 0.1em; /* para dar más espacio entre letras */
+            }
+          
