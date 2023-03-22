@@ -1,6 +1,6 @@
 function predecir() {
   document.getElementById("predictionResult").innerHTML = "";
-  var num = (Math.floor(Math.random() * 90) + 110) / 100;
+  var num = (Math.floor(Math.random() * 80) + 200) / 75;
   setTimeout(function() {
     document.getElementById("predictionResult").innerHTML = num.toFixed(2) + "x";
     document.getElementById("predictionResult").innerHTML = valorPredicho;
@@ -22,7 +22,7 @@ function predecir() {
   if (!canPredict) {
     var alerta = document.createElement("div");
     alerta.setAttribute("class", "alerta");
-    alerta.innerHTML = "No puedes predecir. Debes esperar al menos 2 minutos antes de poder hacer otra predicción.";
+    alerta.innerHTML = "No puedes predecir. Debes esperar al menos 20 segundos antes de poder hacer otra predicción.";
     document.body.appendChild(alerta);
     setTimeout(function() {
       document.body.removeChild(alerta);
@@ -32,9 +32,9 @@ function predecir() {
   canPredict = false;
   setTimeout(function() {
     canPredict = true;
-  }, 120000);
+  }, 20000);
   document.getElementById("predictionResult").innerHTML = "";
-  var num = (Math.floor(Math.random() * 90) + 110) / 100;
+  var num = (Math.floor(Math.random() * 75) + 200) / 85;
   setTimeout(function() {
     document.getElementById("predictionResult").innerHTML = num.toFixed(2) + "x";
   }, 2000);
