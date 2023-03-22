@@ -14,7 +14,7 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="servicios.html">Aviator Predictor Real</a></li>
+				<li><a href="servicios.html">Buy Predictor</a></li>
 				<li class="float:right"><a class="boton" href="#" onclick="mostrarVentana()">Iniciar sesión</a></li>
 			</ul>
 		</nav>
@@ -23,18 +23,17 @@
 		<h1 style="text-align:center;">Selecciona tu casa de apuesta</h1>
 		<div class="iconos">
 			<a href="#" onclick="seleccionarIcono('1win.png')"><img src="1win.png"></a>
-			<a href="#" onclick="seleccionarIcono('betano.jpeg')"><img src="betano.jpeg"></a>
-			<a href="#" onclick="seleccionarIcono('betplay.png')"><img src="betplay.png"></a>
-			<a href="#" onclick="seleccionarIcono('betsson.png')"><img src="betsson.png"></a>
-			<a href="#" onclick="seleccionarIcono('betano.jpeg')"><img src="betano.jpeg"></a>
+			<a href="#" onclick="seleccionarIcono('betplay.jpeg')"><img src="betplay.png"></a>
+			<a href="#" onclick="seleccionarIcono('codere.png')"><img src="codere.jpeg"></a>
 			<a href="#" onclick="seleccionarIcono('pinup.png')"><img src="pinup.png"></a>
+			<a href="#" onclick="seleccionarIcono('betano.jpeg')"><img src="betano.jpeg"></a>
+			<a href="#" onclick="seleccionarIcono('betsson.png')"><img src="betsson.png"></a>
 		  </div>		  
 		<button onclick="predecir()" class="boton-principal" style="display:block; margin: 0 auto;">PREDECIR</button>
 		<p id="predictionResult" style="text-align:center; font-size:4rem; margin-top: 10rem;"></p>
 		<p id="cuotaRetirarMensaje" style="text-align:center; font-size:2rem;"></p>
 <p id="cuotaRetirar" style="text-align:center; font-size:4rem;"></p>
 	</section>
-
 	<footer>
 	</footer>
 	<!-- Ventana emergente para iniciar sesión -->
@@ -49,3 +48,18 @@
 		</form>
 	</div>
 	<head>
+		<script>
+			function validarInicioSesion(event) {
+			  event.preventDefault(); // Evita que se envíe el formulario
+			  const usuario = document.getElementById('').value;
+			  const contrasena = document.getElementById('').value;
+			  if (usuario === '' && contrasena === '') {
+				alert('');
+				cerrarVentana();
+			  } else {
+				alert('');
+			  }
+			}
+			document.querySelector('#loginPopup form').addEventListener('submit', validarInicioSesion);
+		  </script>
+		  

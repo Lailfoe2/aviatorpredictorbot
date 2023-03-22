@@ -1,6 +1,6 @@
 function predecir() {
   document.getElementById("predictionResult").innerHTML = "";
-  var num = Math.floor(Math.random() * 201 + 100) / 100;
+  var num = (Math.floor(Math.random() * 90) + 110) / 100;
   setTimeout(function() {
     document.getElementById("predictionResult").innerHTML = num.toFixed(2) + "x";
     document.getElementById("predictionResult").innerHTML = valorPredicho;
@@ -34,7 +34,7 @@ function predecir() {
     canPredict = true;
   }, 120000);
   document.getElementById("predictionResult").innerHTML = "";
-  var num = Math.floor(Math.random() * 201 + 100) / 100;
+  var num = (Math.floor(Math.random() * 90) + 110) / 100;
   setTimeout(function() {
     document.getElementById("predictionResult").innerHTML = num.toFixed(2) + "x";
   }, 2000);

@@ -3,5 +3,10 @@ function mostrarVentana() {
 }
 		
 function cerrarVentana() {
-	document.getElementById("loginPopup").style.display = "none";
+    document.getElementById("loginPopup").style.display = "none";
+}
+
+function mostrarVentana() {
+    alert("No tienes acceso al Aviator Predictor REAL");
+    document.getElementById("loginPopup").style.display = "block";
 }
